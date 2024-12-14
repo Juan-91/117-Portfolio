@@ -1,0 +1,42 @@
+a p:nth-child(2),
+.experience-card p:nth-child(1) {
+    font-size: 1.5rem;
+    color: var(--surface-color-2);
+    font-weight: bolder;
+    margin: 0.1rem 0px;
+    text-decoration: underline;
+}
+
+a p:nth-child(3),
+.experience-card p:nth-child(2) {
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+a p:nth-child(4),
+.experience-card p:nth-child(4) {
+    margin: 0.4rem 0px;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 0.5rem;
+}
+
+.experience-section {
+    margin-top: 4rem;
+}
+
+.experience-card {
+    width: 27rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: 1rem 0px;
+}
+
+.experience-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0px;
+}

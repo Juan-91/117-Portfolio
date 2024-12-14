@@ -1,0 +1,40 @@
+/* small screen */
+
+@media(max-width:640px) {
+    html {
+        font-size: 12px;
+        border-radius: 50px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-options {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 100%;
+        margin: 1rem 0px;
+    }
+
+    title {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    .container-logo img {
+        width: 70%;
+        height: 70%;
+        border-radius: 45px;
+        margin-left: 50px;
+    }
+
+}

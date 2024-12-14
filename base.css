@@ -1,0 +1,89 @@
+:root {
+    --primary-color: rgba(127, 255, 212, 0.812);
+    --primary-color-600: rgb(184, 246, 225);
+    --primary-color-900: #2A0033;
+
+    --secondary-color: rgba(48, 200, 149, 0.944);
+    --secondary-color-100: #3b3b3b;
+    --secondary-color-200: #191919;
+
+    --background-color: #bfd7ed;
+    --surface-color: #003b73;
+    --surface-color-2: #674874a8;
+    --neutral-color: #bfd7ed;
+
+    --lobster-font: "Lobster Two", sans-serif;
+    --dm-font: "DM Sans", sans-serif;
+    --spartan-font: "League Spartan", sans-serif;
+    --libre-font: "Libre Baskerville", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--dm-font);
+    font-size: 30px;
+}
+
+html {
+    background-color: var(--background-color);
+    font-size: 18px;
+}
+
+.center-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+h1 {
+    font-family: var(--libre-font);
+    color: var(--surface-color);
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+h2 {
+    font-family: var(--libre-font);
+    color: var(--neutral-color);
+    font-size: 1.8rem;
+    letter-spacing: 0.06rem;
+}
+
+p {
+    font-family: var(--libre-font);
+    text-decoration: none;
+}
+
+.text-label {
+    color: var(--secondary-color);
+    background-color: var(--secondary-color-100);
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+}
+
+.center-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

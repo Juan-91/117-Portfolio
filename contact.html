@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} About Me {% endblock title %}
+
+
+{% block content %}
+<section class="contact-section center-column">
+    <h1>Contact Me</h1>
+    <h2>Use form below to say Hi!</h2>
+
+    <form id="email form" class="center-column" method="POST" action=".">
+        {% csrf_token %}
+
+        {{ form.name }}
+        {{ form.email }}
+        {{ form.message }}
+
+        <button>Send Message</button>
+
+    </form>
+</section>
+{% endblock content %}

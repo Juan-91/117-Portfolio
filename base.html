@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital@1&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=League+Spartan:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static './css/base.css' %}">
+    <link rel="stylesheet" href="{% static './css/header.css' %}">
+    <link rel="stylesheet" href="{% static './css/title.css' %}">
+    <link rel="stylesheet" href="{% static './css/project-section.css' %}">
+    <link rel="stylesheet" href="{% static './css/contact.css' %}">
+    <link rel="stylesheet" href="{% static './css/section.css' %}">
+    <link rel="stylesheet" href="{% static './css/responsive.css' %}">
+
+    <title> {% block title %} {% endblock title %} </title>
+</head>
+
+<body>
+    <header class="center-row">
+
+        <!--left side-->
+        <div class="logo center-row">
+            <img src=".{% static './img/logo.png' %}" alt="">
+        </div>
+
+        <!--right side-->
+        <nav class="nav-menu">
+            <!--Hamburger Button-->
+
+            <!--New Option-->
+            <div class="nav-options">
+                <a href="{% url 'about_url' %}">About Me</a>
+                <a href="{% url 'projects_list' %}">Projects</a>
+                <a href="{% url 'experience_list' %}">Experience</a>
+                <a href="{% url 'contact' %}">Contact</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    {% block content %}
+
+    {% endblock content %}
+
+</body>
+
+</html>
